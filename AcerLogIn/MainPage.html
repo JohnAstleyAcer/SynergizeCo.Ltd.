@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .main-container {
+      text-align: center;
+    }
+    h1 {
+      color: #0f3a7a;
+    }
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #0f3a7a;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0d3265;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <h1>Welcome to the Main Page!</h1>
+    <p>You have successfully logged in.</p>
+    <button onclick="logout()">Log Out</button>
+  </div>
+  <script>
+    function logout() {
+      alert('You have been logged out.');
+      window.location.href = "LogIn.html"; // Redirect to the login page
+    }
+  </script>
+</body>
+</html>
